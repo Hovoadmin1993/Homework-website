@@ -42,6 +42,18 @@ h1{
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .par_1{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .par_1{
+        width: 450px;
+    }
+}
+
 
 
 .ull1{
@@ -79,11 +91,23 @@ nav{
     display: flex;
 }
 
+@media screen and (max-width: 780px) {
+    .main {
+      flex-direction: column;
+    }
+  }
+
 .sec_left{
     width: 400px;
     padding: 20px;
     background-color: #d5f1e1 ;
 }
+
+@media screen and (max-width: 780px) {
+    .sec_left {
+      width: initial;
+    }
+  }
 
 .left_1{
     padding: 20px;
@@ -108,6 +132,12 @@ nav{
     background-color: #e9f8f3;
     color: rgb(47, 59, 54);
 }
+
+@media screen and (max-width: 780px) {
+    .sec_right {
+      width: initial;
+    }
+  }
 
 .hr1{
     margin:40px 20px;
@@ -160,8 +190,31 @@ input[type=text], select, textarea {
     display: flex;
   }
 
+  @media screen and (max-width: 992px) {
+    .secform {
+      flex-direction: column;
+    }
+  }
+
   .map{
       margin-top: 45px;
+  }
+
+  @media screen and (max-width: 992px) {
+    iframe[width] {
+      width: 95%;
+    }
+}
+
+    @media screen and (max-width: 600px) {
+        iframe[width] {
+          width: 93%;
+        }
+
+    iframe{
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
   }
 
 footer{
@@ -183,8 +236,15 @@ footer p{
     width: 500px;
 }
 
+@media screen and (max-width: 560px) {
+    .nk {
+      width: initial;
+    }
+  }
+
 .nkr{
     transition: all .8s linear;
+    width: 100%;
 }
 
 .nk:hover .nkr{
